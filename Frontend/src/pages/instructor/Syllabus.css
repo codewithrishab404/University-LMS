@@ -1,0 +1,98 @@
+/* Layout reuse */
+.instructor-dashboard {
+  display: flex;
+  min-height: calc(100vh - 70px);
+  background: linear-gradient(135deg, #0b0f19, #141a2e);
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 48px;
+  padding-top: 72px;
+  color: #fff;
+}
+
+/* Title */
+.page-title {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.page-subtitle {
+  color: #cfd3ff;
+  margin-bottom: 30px;
+}
+
+/* Course select */
+.syllabus-select {
+  margin-bottom: 30px;
+  max-width: 360px;
+}
+
+.syllabus-select label {
+  display: block;
+  margin-bottom: 8px;
+  color: #cfd3ff;
+  font-size: 14px;
+}
+
+.syllabus-select select {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #1a2140;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Syllabus cards */
+.syllabus-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-bottom: 36px;
+}
+
+.syllabus-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.syllabus-card h3 {
+  color: #00d4ff;
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+.syllabus-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.syllabus-card li {
+  padding: 6px 0;
+  font-size: 14px;
+  color: #cfd3ff;
+}
+
+/* Actions */
+.syllabus-actions {
+  display: flex;
+  gap: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-content {
+    padding: 22px;
+    padding-top: 70px;
+  }
+
+  .syllabus-actions {
+    flex-direction: column;
+  }
+}
