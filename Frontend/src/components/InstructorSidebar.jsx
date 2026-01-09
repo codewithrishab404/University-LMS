@@ -110,7 +110,7 @@ const InstructorSidebar = () => {
           absolute bottom-6 left-6 right-6
           py-3 rounded-xl
           text-sm font-semibold text-white
-          bg-gradient-to-r from-red-600 to-pink-600
+          bg-linear-to-r from-red-600 to-pink-600
           shadow-lg
         "
       >
